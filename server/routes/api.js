@@ -9,11 +9,12 @@ router.get('/', (req, res) => {
 });
 
 router.get('/posts', (req, res) => {
-    axios.get(`${API}/posts`)
+  axios.get(`${API}/posts`)
     .then(posts => {
-        res.status(200).json(posts.data);
-    }).catch(error => {
-        res.status(500).send(error);
+      res.status(200).json(posts.data);
+    })
+    .catch(error => {
+      res.status(500).send(error)
     });
 });
 
