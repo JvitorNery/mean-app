@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const axios = require('axios');
-const API = 'https://jsonreplaceholder.typicode.com';
+const API = 'https://jsonplaceholder.typicode.com';
 
 router.get('/', (req, res) => {
     res.send('api works');
